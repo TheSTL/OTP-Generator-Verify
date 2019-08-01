@@ -41,7 +41,7 @@ const sendOtp = async(req,res,next)=>{
         
     }
     
-    phone.save();
+    
 
     
 
@@ -62,7 +62,6 @@ const sendOtp = async(req,res,next)=>{
         break;
     }
     }
-    otpfind.save()
 
 
     const Nexmo = require('nexmo');
@@ -80,6 +79,8 @@ nexmo.message.sendSms(from, to, text,(err, responseData) => {
     if (err) {
       next(err);
     } else {
+        phone.save();
+        otpfind.save()
         res.json({
             msg:'OTP is send Successfuly',
             success:true
