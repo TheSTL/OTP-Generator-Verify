@@ -1,6 +1,13 @@
 # OTP-Generator-Verify
  Generate OTP valid for 5 minute and after that system discard the Otp And user can verify OTP.
 
+## Screenshot
+
+![home](https://user-images.githubusercontent.com/50075905/62273106-5ce3cc80-b45a-11e9-9de6-bf02e94c1da6.PNG)
+
+![dashboard](https://user-images.githubusercontent.com/50075905/62273125-69682500-b45a-11e9-97a2-6bcfc220142a.PNG)
+
+
 ## Running Locally 
 Simple clone and  -
 
