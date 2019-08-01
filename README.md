@@ -55,7 +55,7 @@ Verify OTP
 Backup
 
 ```shell
-mysql -u [username] -p [database] > otp_backup.sql
+mysqldump -u [username] -p [database] > otp_backup.sql
 ```
 
 Restore
