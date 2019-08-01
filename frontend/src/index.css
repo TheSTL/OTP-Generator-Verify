@@ -1,0 +1,15 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.form-container{
+  display: flex;
+    justify-content: center;
+}
+
+.data-container{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
