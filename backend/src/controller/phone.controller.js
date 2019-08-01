@@ -58,7 +58,7 @@ const sendOtp = async(req,res,next)=>{
         })
         setTimeout(()=>{
             otpfind.destroy();
-        },1000*605);
+        },1000*60*5);
         break;
     }
     }
