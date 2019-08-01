@@ -1,5 +1,12 @@
 import{PhoneNo,Otp } from '../models'
 
+import Nexmo from 'nexmo'
+
+const nexmo = new Nexmo({
+  apiKey: process.env.NEXMO_API_KEY,
+  apiSecret: process.env.NEXMO_SECRET,
+});
+
 const sendOtp = async(req,res,next)=>{
     try{
     const {number} = req.body ;
@@ -64,12 +71,7 @@ const sendOtp = async(req,res,next)=>{
     }
 
 
-    const Nexmo = require('nexmo');
-
-const nexmo = new Nexmo({
-  apiKey: process.env.NEXMO_API_KEY,
-  apiSecret: process.env.NEXMO_SECRET,
-});
+    
 
 const from = 'Nexmo';
 const to = number;
