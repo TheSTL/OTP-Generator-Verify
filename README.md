@@ -27,6 +27,12 @@ Front-end run at :- http://localhost:3001
 
 Back-end run  at :- http://localhost:3000
 
+### Admin 
+
+#### Username: admin
+
+#### Password: admin
+
 ## Environment Variables
 
 Generate Nexmo api  and then in Back-end folder open .env file and set values
